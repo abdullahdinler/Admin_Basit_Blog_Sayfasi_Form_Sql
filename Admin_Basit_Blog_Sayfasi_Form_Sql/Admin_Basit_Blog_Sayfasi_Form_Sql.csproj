@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{093ACED4-338A-43A8-AD11-D1772B477AAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Admin_Basit_Blog_Sayfasi_Form_Sql</RootNamespace>
+    <AssemblyName>Admin_Basit_Blog_Sayfasi_Form_Sql</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkle.Designer.cs">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanelHakkimda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanelHakkimda.Designer.cs">
+      <DependentUpon>AdminPanelHakkimda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CvDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form_CvDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CvDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form_CvDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CvDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form_CvDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkimda.Designer.cs">
+      <DependentUpon>Hakkimda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim.Designer.cs">
+      <DependentUpon>Iletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.Designer.cs">
+      <DependentUpon>Mesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminEkle.resx">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanelHakkimda.resx">
+      <DependentUpon>AdminPanelHakkimda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkimda.resx">
+      <DependentUpon>Hakkimda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim.resx">
+      <DependentUpon>Iletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesajlar.resx">
+      <DependentUpon>Mesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Form_CvDataSet.xsc">
+      <DependentUpon>Form_CvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Form_CvDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Form_CvDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Form_CvDataSet.xss">
+      <DependentUpon>Form_CvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Form_CvDataSet1.xsc">
+      <DependentUpon>Form_CvDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Form_CvDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Form_CvDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Form_CvDataSet1.xss">
+      <DependentUpon>Form_CvDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Form_CvDataSet2.xsc">
+      <DependentUpon>Form_CvDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Form_CvDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Form_CvDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Form_CvDataSet2.xss">
+      <DependentUpon>Form_CvDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
